@@ -30,7 +30,6 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'dotenv-rails' # Required to manipulate environment variables in the development environment
   gem 'unicorn' # Application server unicorn
-  gem 'mini_racer', platforms: :ruby # Required at deployment
   group :development, :test do
     gem 'capistrano', '3.6.0' # set of tools for capistrano
     gem 'capistrano-bundler'
