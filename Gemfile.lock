@@ -64,6 +64,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
+    bcrypt_pbkdf (1.1.0)
     bindex (0.8.1)
     bootsnap (1.7.7)
       msgpack (~> 1.0)
@@ -101,6 +102,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    ed25519 (1.2.4)
     erubi (1.10.0)
     ffi (1.15.3)
     globalid (0.5.2)
@@ -237,6 +239,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt_pbkdf (>= 1.0, < 2.0)
   bootsnap (>= 1.4.4)
   byebug
   capistrano (= 3.6.0)
@@ -246,9 +249,11 @@ DEPENDENCIES
   capistrano3-unicorn
   capybara (>= 3.26)
   dotenv-rails
+  ed25519 (>= 1.2, < 2.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mini_racer
+  net-ssh (>= 6.0.2)
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
