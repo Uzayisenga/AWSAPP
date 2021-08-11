@@ -16,7 +16,6 @@ set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
 set :keep_releases, 5
 # Ruby version
 set :rbenv_ruby, '2.7.4'
-set :rbenv_path, '/home/ec2-user/.rbenv/'
 set :rbenv_type, :system
 set :branch, 'capistrano'
 set :branch, "master"
