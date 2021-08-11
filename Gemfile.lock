@@ -236,7 +236,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bcrypt_pbkdf (>= 1.0, < 2.0)
+  bcrypt_pbkdf
   bootsnap (>= 1.4.4)
   byebug
   capistrano (= 3.6.0)
@@ -246,10 +246,10 @@ DEPENDENCIES
   capistrano3-unicorn
   capybara (>= 3.26)
   dotenv-rails
-  ed25519 (>= 1.2, < 2.0)
+  ed25519
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  net-ssh (>= 6.0.2)
+  net-ssh
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
