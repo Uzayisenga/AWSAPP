@@ -52,3 +52,7 @@ namespace :deploy do
     end
   end
 end
+set :default_env, {
+    PATH: '$HOME/.nvm/versions/node/v14.17.4/bin/:$PATH',
+    NODE_ENVIRONMENT: 'production'
+}
