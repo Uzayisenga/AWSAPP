@@ -1,27 +1,25 @@
 # config valid only for current version of Capistrano
 lock '3.6.0'
-# Application name to deploy
+# デプロイするアプリケーション名
 set :application, 'AWSAPP'
-# git repository to clone
-# (Xxxxxxxx: user name, yyyyyyyy: application name)
+# cloneするgitのレポジトリ
+# （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
 set :repo_url, 'https://github.com/Uzayisenga/AWSAPP.git'
 # deployするブランチ。デフォルトでmainを使用している場合、masterをmainに変更してください。
 set :branch, ENV['BRANCH'] || 'master'
-# The directory to deploy to.
+# deploy先のディレクトリ。
 set :deploy_to, '/var/www/AWSAPP'
-# Folders/files with symbolic links
+# シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
-# Number of versions to retain (*described later)
+# 保持するバージョンの個数(※後述)
 set :keep_releases, 5
-# Ruby version
+# Rubyのバージョン
 set :rbenv_ruby, '2.7.4'
 set :rbenv_type, :system
-set :branch, 'capistrano'
-set :branch, "master"
-# The level of the log to output. Settings to: debug if you want to see the error log in detail.
-# For production environments,: info is normal。
-# However, if you want to check the behavior firmly, Settings it to: debug.
+# 出力するログのレベル。エラーログを詳細に見たい場合は :debug に設定する。
+# 本番環境用のものであれば、 :info程度が普通。
+# ただし挙動をしっかり確認したいのであれば :debug に設定する。
 set :log_level, :info
 namespace :deploy do
   desc 'Restart application'
@@ -54,7 +52,3 @@ namespace :deploy do
     end
   end
 end
-set :default_env, {
-    PATH: '$HOME/.nvm/versions/node/v14.17.4/bin/:$PATH',
-    NODE_ENVIRONMENT: 'production'
-}
