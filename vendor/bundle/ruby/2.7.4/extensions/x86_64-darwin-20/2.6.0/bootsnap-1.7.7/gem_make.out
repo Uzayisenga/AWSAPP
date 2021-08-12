@@ -1,0 +1,15 @@
+current directory: /Users/maruyamaryo/aws-blog-work/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+/Users/maruyamaryo/.rbenv/versions/2.6.5/bin/ruby -I /Users/maruyamaryo/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20210812-37337-1rr0ty3.rb extconf.rb
+creating Makefile
+
+current directory: /Users/maruyamaryo/aws-blog-work/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/maruyamaryo/aws-blog-work/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/maruyamaryo/aws-blog-work/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.7.7/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210812-37337-1bzjiod/bootsnap
