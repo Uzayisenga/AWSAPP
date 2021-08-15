@@ -258,7 +258,7 @@ DEPENDENCIES
   ed25519
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  pg (>= 0.18, < 2.0)
+  pg
   puma (~> 3.11)
   rails (~> 6.1.4)
   rake
